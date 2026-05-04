@@ -1,0 +1,537 @@
+body {
+    font-family: "Montserrat";
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0;
+    padding-top: 120px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 75%;
+    margin: 0 auto;
+    min-height: 120px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+header button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+header button:hover {
+    color: rgb(252, 195, 4);
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 30px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 20px;
+}
+
+.header-actions button {
+    margin-right: 8px;
+}
+
+.login-link {
+    margin-right: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.header-actions a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+.header-actions a i {
+    margin-right: 4px;
+}
+.cart {
+    position: relative;
+}
+.cart span {
+    position: absolute;
+    background-color: rgb(252, 195, 4);
+    color: black;
+    border-radius: 50%;
+    top: -10px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-actions a:hover {
+    color: rgb(252, 195, 4);
+    transform: scale(1.1);
+}
+header nav a:hover {
+    color: rgb(252, 195, 4);
+    transform: scale(1.1);
+}
+header nav a.active {
+    color: rgb(252, 195, 4);
+} 
+header nav a:not(:last-child)::after {
+    content: "|";
+    margin-left: 20px;
+}
+
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    width: fit-content;
+}
+
+.header-logo img {
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.drop img {
+    width: 280px;
+    border-radius: 8px;
+}
+
+.drop {
+    text-align: center;
+}
+
+.drop h2 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+.drop-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    text-align: center;
+
+    z-index: 1;
+}
+
+.drop-card {
+    border-radius: 8px;
+    border: .1px solid rgb(210, 178, 0);
+    position: relative;
+}
+
+.drop-card h2 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 23px;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    color: white;
+}
+
+.newsletter-content label {
+    align-content: start;
+}
+
+
+.newsletter {
+    border-radius: 8px;
+    font-family: 'montserrat', sans-serif;
+    margin:40px auto 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
+    background: radial-gradient(circle, rgb(34, 34, 34), rgb(0, 0, 0));
+    text-align: center;
+    padding-bottom: 25px;
+    border: 1px solid rgb(210, 178, 0);
+}
+
+.newsletter-content label {
+    align-self: start;
+    margin-left: -10px;
+}
+
+
+.newsletter h1 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: xx-large;    
+}
+.newsletter p {
+    margin-top: -15px;
+}
+.newsletter-content {
+    gap: 12px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.newsletter-content input {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    border: 1.3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    color: white;
+}
+
+.newsletter input::placeholder {
+    color: rgb(120, 120, 120);
+    opacity: 50%;
+}
+
+.newsletter-content button {
+    font-family: 'Montserrat';
+    color: black;
+    background-color: rgb(238, 238, 238);
+    font-weight: 490;
+    margin-top: 20px;
+    width: 35%;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    height: 25px;
+}
+
+.footer-container {
+    max-width: 75%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, rgba(255,255,255,0.45), transparent) 1;
+    padding-top: 40px;
+    margin-top: 40px;
+    padding: 40px 50px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-left img {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    width: 180px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 11px;
+    color: gray;
+}
+
+.footer-right {
+    gap: 20px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-right a {
+    color: white;
+}
+
+.footer-right a:hover {
+    color: rgb(252, 195, 4);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
+/* RESPONSIVO MOBILE */
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 95px;
+    }
+
+    .header-container {
+        max-width: 100%;
+        min-height: 90px;
+        padding: 0 16px;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .header-logo {
+        justify-self: center;
+    }
+
+    .header-logo img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .menu-hamburger {
+        display: block;
+        justify-self: start;
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .header-actions {
+        gap: 12px;
+    }
+
+    .header-actions button {
+        margin-right: 0;
+    }
+
+    .login-link span {
+        display: none;
+    }
+
+    .menu-mobile {
+        top: 100%;
+        padding: 18px 14px 20px;
+    }
+
+    .menu-mobile a {
+        font-size: 1rem;
+    }
+
+    .banner {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .banner img {
+        width: 100%;
+        display: block;
+        min-height: 230px;
+        object-fit: cover;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 88%;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+    }
+
+    .banner h2 {
+        font-size: 0.95rem;
+        margin: 8px 0;
+    }
+
+    .banner p {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+
+        .drop {
+        padding: 10px 14px 0;
+    }
+
+    .drop h2 {
+        font-size: 2rem;
+        margin-bottom: 22px;
+    }
+
+    .drop-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 18px;
+    }
+
+    .drop-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .drop
+
+    .drop img {
+        width: 100%;
+        aspect-ratio: 1 / 1.25;
+        object-fit: cover;
+    }
+
+    .drop-card h2 {
+        font-size: 1rem;
+        left: 50%;
+        top: 78%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .newsletter {
+        max-width: calc(100% - 28px);
+        margin: 30px auto 0;
+        padding: 24px 16px 28px;
+    }
+
+    .newsletter h1 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .newsletter p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
+    .newsletter-content {
+        width: 100%;
+    }
+
+    .newsletter-content input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .newsletter-content button {
+        width: 100%;
+        max-width: 140px;
+        height: 38px;
+    }
+
+    footer {
+        padding: 30px 16px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .footer-left img {
+        width: 140px;
+    }
+
+    .footer-right {
+        font-size: 30px;
+        gap: 16px;
+    }
+}
+
+
+/* MENU HAMBURGER */
+
+  .menu-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;  
+    justify-self: start;
+}
+
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.menu-mobile.active {
+    display: flex;
+}
+
+.menu-mobile a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.menu-mobile a:hover {
+  color: rgb(252, 195, 4);
+}
